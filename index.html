@@ -40,6 +40,7 @@
           <img src="img/logofirefoxos.png">
 					<h3>Firefox OS & OpenWebApp Workshop</h3>
 					<p>
+          <small></small>
 					</p>
 				</section>
 
@@ -199,7 +200,7 @@
               <p>index.html</p>
               <pre><code>
 &lt;body&gt;
-  &lt;h3&gt;Hello #TnWebDays :)&lt;/h3&gt;
+  &lt;h3&gt;Hello World ! :)&lt;/h3&gt;
 &lt;/body&gt;
               </code></pre>
               
@@ -210,7 +211,7 @@
             <pre><code>
 {
   "name":"Hello World",
-  "description":"Hello world pour le workshop tnwebdays",
+  "description":"Hello world pour le workshop esprit",
   "launch_path":"/index.html",
   "developer": {
     "name":"rednaks",
@@ -272,10 +273,13 @@ navigator.vibrate([]);
           </section>
           <section>
           <pre><code>
-var myNotification = navigator.mozNotification(
+var myNotification = navigator.mozNotification.createNotification(
                     "Hello", 
                     "Juste pour dire salut :p", 
                     iconURL);
+//myNotification.onclick = function () {}
+//myNotification.onclose = function () {}
+
 myNotification.show();
           </code></pre>
           </section>
